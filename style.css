@@ -82,7 +82,7 @@ a {
     display: flex;
     align-items: center;
     box-sizing: content-box;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 15px 0px 15px;
     margin: 0px auto; 
     min-height: 104px;
     max-width: 1046px;
@@ -161,7 +161,7 @@ a {
     margin: 0px auto;
 }
 .main-block__body {
-    padding: 184px 0px 191px 0px;
+    padding: 184px 0px 181px 0px;
     position: relative;
     z-index: 2;
     max-width: 400px;
@@ -242,10 +242,22 @@ a {
     ._ibg img {
         opacity: 0.5;
     }
+    .main-block__body {
+        padding: 80px 0px 50px 0px; ;
+    }
+    .main-block__title {
+        font-size: 32px;
+    }
+    .main-block__text {
+        margin: 15px 0px;
+    }
 }
 @media(max-width:600px){
     .main-block__text{
         color: #615f5f;
+    }
+    .main-block__body {
+        padding: 80px 0px 20px 0px; ;
     }
 }
 @media(max-width:500px){
@@ -255,9 +267,6 @@ a {
     }
     .main-block__title {
         font-size: 40px;
-    }
-    .main-block__body {
-        padding: 120px 0px 191px 0px;
     }
 }
 @media(max-width:390px){
@@ -276,7 +285,7 @@ a {
     background-color: #FAFAFA;
 }
 .consulting__body {
-    margin: -111px 0px 0px 0px;
+    padding: 71px 0px 0px 0px;
     z-index: 5;
 }
 .consulting__list {
@@ -340,6 +349,11 @@ a {
         flex: 1 1 100%;
     }
 }
+@media(max-width:1000px){
+    .consulting__body {
+        padding: 20px 0px 0px 0px;
+    }
+}
 /*----------------------------EXPERIENCE---------------------------------------*/
 .experience__body {
     padding: 80px 15px 50px 15px;
@@ -396,7 +410,6 @@ a {
     }
 }
 /*----------------------------ADVICE---------------------------------------*/
-
 .advice__container {
     padding: 80px 15px 80px 15px;
 }
@@ -449,7 +462,7 @@ a {
     padding: 15px 30px 75px 30px;
 }
 @media(max-width:1025px){
-    .advice__box{
+    .advice__container{
         padding: 0px 15px 0px 15px;
     }
     .advice__body{
@@ -552,7 +565,7 @@ a {
     .who__text-top{
         padding: 0px 0px 40px 0px;
     }
-    .who__box{
+    .who__container{
         padding: 40px 0px;
     }
     .who__content{
@@ -957,7 +970,7 @@ a {
 .info__colum {
     display: flex;
     
-    padding: 0px 15px;
+    padding: 20px 15px;
     max-width: 1046px;
     margin: 0 auto;
     justify-content: space-between;
@@ -969,7 +982,10 @@ a {
     line-height: 150%;
     letter-spacing: 0.1px;
     color: #FFFFFF;
-    padding: 0px 15px 20px 15px;
+    padding: 20px 15px 0px 15px;
+}
+.info__item-menu:first-child {
+    padding-top: 20px;
 }
 .info__item-link {
     font-weight: 600;
@@ -1026,6 +1042,9 @@ a {
         flex-wrap: wrap;
         flex: 0 1 50%;
     }
+    .info__container {
+        padding: 20px 15px;
+    }
 }
 /*----------------------------FOOTER---------------------------------------*/
 .footer {
@@ -1042,6 +1061,9 @@ a {
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.2px;
+}
+.footer__icon {
+    display: flex;
 }
 .icons img {
     padding: 10px 10px;
