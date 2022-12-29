@@ -383,9 +383,17 @@ a {
 .icons__body {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     column-gap: 30px;
     padding: 50px 0px;
+}
+.icons__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 152px;
 }
 /*----------------------------SUBSCRIBE---------------------------------------*/
 .subscribe {
