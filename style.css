@@ -42,6 +42,9 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 :root {
     --color-gray:#737373;
     --title-color:#252B42;
+    --color-green: #0D5C63;
+    --color-orange: #FF7B47;
+    --color-white: #ffffff;
 }
 body {
     color: var(--color-gray);
@@ -101,22 +104,13 @@ a {
     margin-right: 0px;
 }
 .header__link.active {
+    border-bottom: 4px solid #1d1b1b;
+    border-radius: 2px;
     color: #1d1b1b;
 }
-.active::after {
-   content: "";
-   position: absolute;
-   left: 0;
-   bottom: -5px;
-   width: 100%;
-
-   height: 4px;
-   background-color: #2e2c2c;
-   border-radius: 2px;
-
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .header__link:hover{
+    border-bottom: 4px solid #1d1b1b;
+    border-radius: 2px;
     color: #1d1b1b;
 }
 /*----------------------------BACKGROUND AND CONTENT----------------------------------------------*/
@@ -159,11 +153,11 @@ a {
     align-items: center;
     flex-wrap: nowrap;
 
-    color: #FFFFFF;
+    color: var(--color-white);
     padding: 10px 36px;
     font-weight: 700;
     border-radius: 37px;
-    background-color: #FF7B47;
+    background-color: var(--color-orange);
 
     width: 187px;
     height: 48px;
@@ -171,7 +165,7 @@ a {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__orange-button:hover{
-    box-shadow: 0 5px 25px #b65732;
+    box-shadow: 0 5px 25px var(--color-orange);
 }
 .hero__white-button {
     display: flex;
@@ -179,10 +173,10 @@ a {
     justify-content: center;
     align-items: center;
 
-    color: #0D5C63;
+    color: var(--color-green);
     padding: 10px 36px;
     font-weight: 700;
-    border: 1px solid #0D5C63;
+    border: 1px solid var(--color-green);
     border-radius: 37px;
     background-color: inherit;
 
@@ -192,7 +186,7 @@ a {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__white-button:hover{
-    box-shadow: 0 5px 30px #148b95;
+    box-shadow: 0 5px 30px var(--color-green);
 }
 /*----------------------------CONSULTING---------------------------------------*/
 .consulting__list {
@@ -211,9 +205,22 @@ a {
     justify-content: center;
    
     padding: 35px 40px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.consulting__item:hover {
+    background-color: var(--color-green); 
+    color: var(--color-white); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.consulting__item:hover .consulting__icon-sprite{
+    fill: var(--color-white);
 }
 .consulting__icon-sprite {
+    display: block;
+    fill: var(--color-green);
     width: 48px;
     height: 48px;
 }
@@ -229,31 +236,6 @@ a {
 .consulting__text {
     font-weight: 500;
     line-height: 142%;
-}
-.consulting__item-green {
-    height: 100%;
-    width: 328px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    padding: 35px 40px;
-    background-color: #0D5C63;
-}
-.consulting__title-green {
-    padding: 10px 0px;
-
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 0.1px;
-    line-height: 133%;
-    color: #FFFFFF;
-}
-.consulting__text-green {
-    font-weight: 500;
-    line-height: 142%;
-    color: #FFFFFF;
 }
 /*----------------------------EXPERIENCE---------------------------------------*/
 .experience__container {
@@ -276,8 +258,10 @@ a {
 .experience__item {
     padding: 30px 40px;
     text-align: center;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 }
 .experience__icon-sprite {
+    fill: var(--color-green);
     width: 48px;
     height: 48px;
 }
@@ -313,6 +297,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 }
 .advice__thumb {
     padding: 30px 30px;
@@ -451,7 +436,7 @@ a {
     font-size: 24px;
     line-height: 133%;
     letter-spacing: 0.1px;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 .subscribe__form {
     display: flex;
@@ -459,9 +444,9 @@ a {
     align-items: center;
 }
 .subscribe__area {
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--color-white);
     border-radius: 5px 0px 0px 5px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     height: 58px;
     padding: 0px 20px;
     width: 100%;
@@ -482,7 +467,7 @@ a {
     line-height: 200%;
     
     height: 58px;
-    background-color: #FF7B47;
+    background-color: var(--color-orange);
     border-radius: 0px 5px 5px 0px;
     color: #E6E6E6;
     border: 1px solid #E6E6E6;
@@ -491,7 +476,7 @@ a {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe__buttom:hover{
-    box-shadow: 0 5px 10px #b65732;
+    box-shadow: 0 5px 10px var(--color-orange);
 }
 /*----------------------------GETINTOUCH---------------------------------------*/
 .getintouch__container {
@@ -520,10 +505,30 @@ a {
     flex-direction: column;
 
     padding: 50px 40px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     margin: 30px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+.getintouch__item:hover{
+    background-color: #252B42;
+}
+.getintouch__item:hover .getintouch__email1{
+    color: var(--color-white);
+}
+.getintouch__item:hover .getintouch__email2{
+    color: var(--color-white);
+}
+.getintouch__item:hover .getintouch__support{
+    color: var(--color-white);
+}
+.getintouch__item:hover .getintouch__icon-sprite{
+    fill: var(--color-white);
 }
 .getintouch__icon-sprite {
+    fill: var(--color-green);
     width: 72px;
     height: 72px;
 }
@@ -536,6 +541,7 @@ a {
     line-height: 171%;
     color: var(--title-color);
     text-align: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .getintouch__email2 {
     font-weight: 600;
@@ -543,6 +549,7 @@ a {
     color: var(--title-color);
     padding: 0px 0px 15px 0px;
     text-align: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .getintouch__support {
     font-weight: 700;
@@ -552,66 +559,22 @@ a {
     color: var(--title-color);
     padding: 0px 0px 15px 0px;
     text-align: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .getintouch__button {
-    border: 1px solid #FF7B47;
+    border: 1px solid var(--color-orange);
     border-radius: 5px;
     font-weight: 600;
     font-size: 14px;
     line-height: 171%;
-    color: #FF7B47;
+    color: var(--color-orange);
     padding: 10px 20px;
     margin: 0px 50px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .getintouch__button:hover{
-    box-shadow: 0 5px 25px #b65732;
-}
-.getintouch__item-blue {
-    background-color: var(--title-color);
-    padding: 80px 40px;
-}
-.getintouch__icon-blue {
-    padding: 0px 0px 15px 0px;
-    text-align: center;
-}
-.getintouch__email1-blue {
-    font-weight: 600;
-    line-height: 171%;
-    color: #FFFFFF;
-    text-align: center;
-}
-.getintouch__email2-blue {
-    font-weight: 600;
-    line-height: 171%;
-    color: #FFFFFF;
-    padding: 0px 0px 15px 0px;
-    text-align: center;
-}
-.getintouch__support-blue {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.1px;
-    color:#FFFFFF;
-    padding: 0px 0px 15px 0px;
-    text-align: center;
-}
-.getintouch__button-blue {
-    border: 1px solid #FF7B47;
-    border-radius: 5px;
-    background-color: var(--title-color);
-    font-weight: 600;
-    line-height: 171%;
-    letter-spacing: 0.2px;
-    color: #FF7B47;
-    padding: 10px 20px;
-    margin: 0px 50px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.getintouch__button-blue:hover{
-    box-shadow: 0 5px 25px #b65732;
+    box-shadow: 0 5px 25px var(--color-orange);
 }
 /*----------------------------AGENCY---------------------------------------*/
 .agency__container {
@@ -640,19 +603,19 @@ a {
     padding: 0px 0px 15px 0px;
 }
 .agency__botton {
-    border-radius: 5px;
-    background-color: #FF7B47;
     font-weight: 700;
     line-height: 200%;
     text-align: center;
     height: 62px;
     padding: 15px 40px;
-    color: #FFFFFF;
-    box-shadow: 0px 0px 0px #FF7B47;
+    border-radius: 5px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    box-shadow: 0px 0px 0px var(--color-orange);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 .agency__botton:hover{
-    box-shadow: 0 5px 25px #b65732;
+    box-shadow: 0 5px 25px var(--color-orange);
 }
 /*----------------------------INFO---------------------------------------*/
 .info {
@@ -676,17 +639,17 @@ a {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.1px;
-    color: #FFFFFF;
+    color: var(--color-white);
     padding: 0px 15px 20px 0px;
 }
 .info__item-link {
     font-weight: 600;
     line-height: 171%;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 .info__item-link:hover{
     text-decoration: none;
-    border-bottom: 2px solid #FFFFFF;;
+    border-bottom: 2px solid var(--color-white);
 }
 .info__item li{
     padding: 5px 0px;
@@ -694,7 +657,7 @@ a {
 .info__item-tel{
     font-weight: 600;
     line-height: 171%;
-    color: #FFFFFF;
+    color: var(--color-white);
     background: url('./icon/tel-small.svg');
     background-repeat: no-repeat;
     background-position: left;
@@ -704,7 +667,7 @@ a {
 .info__item-map{
     font-weight: 600;
     line-height: 171%;
-    color: #FFFFFF;
+    color: var(--color-white);
     background: url('./icon/mark-small.svg');
     background-repeat: no-repeat;
     background-position: left;
@@ -714,7 +677,7 @@ a {
 .info__item-email{
     font-weight: 600;
     line-height: 171%;
-    color: #FFFFFF;
+    color: var(--color-white);
     background: url('./icon/plain-small.svg');
     background-repeat: no-repeat;
     background-position: left;
