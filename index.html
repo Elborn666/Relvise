@@ -13,23 +13,25 @@
 <body>
     <header class="header">
         <div class="header__container container">
-            <a href="./index.html" class="header_logo">Relvise</a>
-            <nav class="header__menu">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="./index.html" class="header__link active">Home</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Product</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Pricing</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__body">
+                <a href="./index.html" class="header_logo">Relvise</a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="./index.html" class="header__link active">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Product</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Pricing</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#contact" class="header__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -266,7 +268,7 @@
                     <p class="subscribe__text">Subscribe For Latest Newsletter</p>
                     <form class="subscribe__form">
                         <input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
-                            class="subscribe__area">
+                            class="subscribe__input">
                         <button type="submit" class="subscribe__buttom">Subscribe</button>
                     </form>
                 </div>
@@ -329,7 +331,7 @@
                 </div>
             </div>
         </section>
-        <section class="info">
+        <section class="info" id="contact">
             <div class="info__container container">
                 <div class="info__colum">
                     <div class="info__row">
@@ -391,25 +393,25 @@
             <div class="footer__body">
                 <p class="footer__text">Made With Love By Figmaland All Right Reserved </p>
                 <ul class="footer__icon">
-                    <li><a href="https://uk-ua.facebook.com/" target="_blank" class="icons">
+                    <li><a href="https://uk-ua.facebook.com/" target="_blank" class="footer__icon-item">
                             <svg class="footer__icon-sprite">
                                 <use href="./icon/sprite.svg#icon-fb"></use>
                             </svg>
                         </a>
                     </li>
-                    <li> <a href="https://www.instagram.com/" target="_blank" class="icons">
+                    <li> <a href="https://www.instagram.com/" target="_blank" class="footer__icon-item">
                             <svg class="footer__icon-sprite">
                                 <use href="./icon/sprite.svg#icon-inst"></use>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="https://twitter.com/?lang=uk" target="_blank" class="icons">
+                    <li><a href="https://twitter.com/?lang=uk" target="_blank" class="footer__icon-item">
                             <svg class="footer__icon-sprite">
                                 <use href="./icon/sprite.svg#icon-twit"></use>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="https://www.youtube.com/" target="_blank" class="icons">
+                    <li><a href="https://www.youtube.com/" target="_blank" class="footer__icon-item">
                             <svg class="footer__icon-sprite">
                                 <use href="./icon/sprite.svg#icon-youtube"></use>
                             </svg>
