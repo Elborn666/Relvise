@@ -119,7 +119,7 @@ a {
 
 /*----------------------------BACKGROUND AND CONTENT----------------------------------------------*/
 .hero {
-    background-image: url('./img/cover.jpg');
+    background-image: url('./img/cover.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
