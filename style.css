@@ -88,6 +88,10 @@ a {
     line-height: 134%;
     letter-spacing: 0.1px;
     color: var(--title-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header_logo:hover {
+    color: var(--color-green);
 }
 .header__list {
     display: flex;
@@ -540,6 +544,7 @@ a {
     fill: var(--color-gray);
     width: 152px;
     height: 152px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons__item-sprite:hover {
     fill: var(--color-orange);

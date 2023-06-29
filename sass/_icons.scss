@@ -1,0 +1,40 @@
+.icons__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.icons__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+.icons__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons__item-sprite {
+    fill: var(--color-gray);
+    width: 152px;
+    height: 152px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icons__item-sprite {
+    &:hover {
+        fill: var(--color-orange);
+    }
+}
+@media screen and (max-width: 1030px) {
+    .icons__container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .icons__body {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 400px) {
+    .icons {
+        display: none;
+    }
+}

@@ -1,0 +1,30 @@
+.footer__container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__text {
+    margin-right: 20px;
+    font-weight: 600;
+    line-height: 171%;
+}
+.footer__icon {
+    display: flex;
+    column-gap: 20px;
+}
+.footer__icon-sprite {
+    width: 24px;
+    height: 24px;
+}
+@media screen and (max-width: 600px) {
+    .footer__body {
+        flex-wrap: wrap;
+    }
+    .footer__text {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,27 @@
+body {
+    color: var(--color-gray);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    background-color: #FAFAFA;
+}
+.container {
+    max-width: 1050px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+.title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+}
+.text {
+    font-weight: 500;
+    line-height: 143%;
+}
+a {
+    color:var(--color-gray);
+    text-decoration: none;
+}
