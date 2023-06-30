@@ -268,7 +268,7 @@
                 <div class="subscribe__body">
                     <p class="subscribe__text">Subscribe For Latest Newsletter</p>
                     <form class="subscribe__form">
-                        <input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
+                        <input type="email" placeholder="Your Email" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
                             class="subscribe__input">
                         <button type="submit" class="subscribe__buttom">Subscribe</button>
                     </form>
@@ -422,6 +422,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop">
+        <div class="modal__subscribe">
+            <div class="modal__subscribe-container">
+                <div class="modal__subscribe-body">
+                    <h2 class="modal__subscribe-title">
+                        Subscription</h2>
+                    <p class="modal__subscribe-text">You have successfully subscribed.</p>
+                    <button class="modal__subscribe-button" type="button">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
+    <script src="./js/animation.js" type="module"></script>
+    <script src="./js/contactus.js" type="module"></script>
+    <script src="./js/subscribe.js" type="module"></script>
 </html>

@@ -36,12 +36,10 @@
     box-shadow: 0px 0px 0px var(--color-orange);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-}  
-.agency__botton {
     &:hover {
         box-shadow: 0 5px 25px var(--color-orange);
     }
-}
+}  
 @media screen and (max-width: 992px) {
     .agency__container {
         padding-top: 20px;

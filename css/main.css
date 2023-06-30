@@ -30,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -170,7 +174,6 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .hero__orange-button:hover {
   box-shadow: 0 5px 25px var(--color-orange);
 }
@@ -187,7 +190,6 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .hero__white-button:hover {
   box-shadow: 0 5px 30px var(--color-green);
 }
@@ -252,7 +254,6 @@ a {
   border-radius: 5px;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 }
-
 .consulting__item:hover {
   background-color: var(--color-green);
   color: var(--color-white);
@@ -637,7 +638,6 @@ a {
   height: 152px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .icons__item-sprite:hover {
   fill: var(--color-orange);
 }
@@ -724,7 +724,6 @@ a {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .subscribe__buttom:hover {
   box-shadow: 0 5px 10px var(--color-orange);
 }
@@ -822,7 +821,6 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 }
-
 .getintouch__item:hover {
   background-color: #252B42;
 }
@@ -894,7 +892,6 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .getintouch__button:hover {
   box-shadow: 0 5px 25px var(--color-orange);
 }
@@ -961,7 +958,6 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .agency__botton:hover {
   box-shadow: 0 5px 25px var(--color-orange);
 }
@@ -1028,7 +1024,6 @@ a {
   line-height: 171%;
   color: var(--color-white);
 }
-
 .info__item-link:hover {
   text-decoration: none;
   border-bottom: 2px solid var(--color-white);
@@ -1111,4 +1106,75 @@ a {
   .footer__text {
     margin-bottom: 20px;
   }
+}
+.backdrop {
+  position: fixed;
+  z-index: 60;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__subscribe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__subscribe-container {
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modal__subscribe-body {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal__subscribe-title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 138%;
+  color: var(--title-color);
+}
+
+.modal__subscribe-text {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 132%;
+}
+
+.modal__subscribe-button {
+  padding: 10px 15px;
+  min-width: 117px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 200%;
+  background-color: var(--color-orange);
+  border-radius: 0px 5px 5px 0px;
+  color: #E6E6E6;
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__subscribe-button:hover {
+  box-shadow: 0 5px 25px var(--color-orange);
 }/*# sourceMappingURL=main.css.map */
