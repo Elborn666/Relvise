@@ -37,9 +37,9 @@
    margin-bottom: 10px;
 }
 .who__text {
+    margin-bottom: 50px;
     font-weight: 500;
     line-height: 143%;
-    margin-bottom: 50px;
 }
 .who__content-item { 
     display: flex;
@@ -56,11 +56,11 @@
     margin-left: 20px;
 }
 .who__content-subtitle {
-    color: var(--title-color);
-    font-weight: 700;
     font-size: 16px;
+    font-weight: 700;
     line-height: 150%;
     letter-spacing: 0.1px;
+    color: var(--title-color);
 }
 .who__contetnt-subtext {
     font-weight: 600;

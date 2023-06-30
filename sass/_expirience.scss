@@ -6,10 +6,12 @@
     margin-bottom: 50px;
     text-align: center;
 }
+.experience__title-top {
+    margin-bottom: 10px;
+}
 .experience__text-top {
-    padding: 10px 0px 0px 0px;
-    max-width: 470px;
     margin: 0 auto;
+    max-width: 470px;
 }
 .experience__colum {
     display: flex;
@@ -28,7 +30,7 @@
     height: 48px;
 }
 .experience__title {
-    padding: 10px 0px;
+    margin: 10px 0px;
 }
 .experience__text {
     font-size: 16px;

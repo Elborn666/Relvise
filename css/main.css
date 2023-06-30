@@ -132,8 +132,8 @@ a {
 
 .hero__text {
   margin-top: 35px;
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
   line-height: 132%;
 }
 
@@ -145,8 +145,8 @@ a {
 
 .hero__orange-button {
   padding: 10px 36px;
-  font-weight: 700;
   line-height: 28px;
+  font-weight: 700;
   letter-spacing: 0.2px;
   border: 1px solid var(--color-orange);
   border-radius: 37px;
@@ -162,8 +162,8 @@ a {
 
 .hero__white-button {
   padding: 10px 36px;
-  font-weight: 700;
   line-height: 28px;
+  font-weight: 700;
   letter-spacing: 0.2px;
   color: var(--color-green);
   border: 1px solid var(--color-green);
@@ -305,10 +305,13 @@ a {
   text-align: center;
 }
 
+.experience__title-top {
+  margin-bottom: 10px;
+}
+
 .experience__text-top {
-  padding: 10px 0px 0px 0px;
-  max-width: 470px;
   margin: 0 auto;
+  max-width: 470px;
 }
 
 .experience__colum {
@@ -331,7 +334,7 @@ a {
 }
 
 .experience__title {
-  padding: 10px 0px;
+  margin: 10px 0px;
 }
 
 .experience__text {
@@ -396,9 +399,9 @@ a {
 }
 
 .advice__title {
-  padding-bottom: 15px;
-  font-weight: 700;
+  margin-bottom: 15px;
   font-size: 16px;
+  font-weight: 700;
   line-height: 150%;
   color: var(--title-color);
 }
@@ -479,9 +482,9 @@ a {
 }
 
 .who__text {
+  margin-bottom: 50px;
   font-weight: 500;
   line-height: 143%;
-  margin-bottom: 50px;
 }
 
 .who__content-item {
@@ -503,11 +506,11 @@ a {
 }
 
 .who__content-subtitle {
-  color: var(--title-color);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.1px;
+  color: var(--title-color);
 }
 
 .who__contetnt-subtext {
@@ -609,14 +612,15 @@ a {
 }
 
 .subscribe__container {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .subscribe__body {
-  display: flex;
-  align-items: center;
   position: relative;
   z-index: 5;
+  display: flex;
+  align-items: center;
   padding: 30px 50px;
   min-height: 124px;
   background-color: #17213C;
@@ -650,8 +654,8 @@ a {
 .subscribe__buttom {
   padding: 14px 23px;
   min-width: 117px;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 200%;
   background-color: var(--color-orange);
   border-radius: 0px 5px 5px 0px;
@@ -784,11 +788,11 @@ a {
 }
 
 .getintouch__email2 {
+  margin-bottom: 15px;
   text-align: center;
   font-weight: 600;
   line-height: 171%;
   color: var(--title-color);
-  margin-bottom: 15px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
