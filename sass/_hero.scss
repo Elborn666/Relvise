@@ -17,21 +17,11 @@
     line-height: 138%;
     color: var(--title-color);
 
-    animation: title-opacity 2.5s linear 1 forwards;
+    opacity: 0;
+    transition: all 2s  ease 0s;
 }
-@keyframes title-opacity {
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 0.25;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
+.active {
+    opacity: 1;
 }
 .hero__text {
     margin-top: 35px;
@@ -83,11 +73,11 @@
     }
     .hero__title {
         padding-top: 30px;
-        font-size: 32px;
+        font-size: 30px;
     }
     .hero__text {
         margin-top: 20px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .hero__buttons {
         margin-top: 20px;
@@ -96,7 +86,6 @@
 @media screen and (max-width: 550px) {
     .hero__title {
         padding-top: 20px;
-        font-size: 20px;
     }
     .hero__text {
         margin-top: 15px;

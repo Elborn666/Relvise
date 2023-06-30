@@ -1,3 +1,10 @@
+.experience {
+    opacity: 0;
+    transition: all 2s  ease 0s;
+}
+.active {
+    opacity: 1;
+}
 .experience__container {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -8,21 +15,6 @@
 }
 .experience__title-top {
     margin-bottom: 10px;
-    animation: title-opacity 2.5s linear 1 forwards;
-}
-@keyframes title-opacity {
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 0.25;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
 }
 .experience__text-top {
     margin: 0 auto;

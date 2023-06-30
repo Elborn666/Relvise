@@ -132,23 +132,14 @@ a {
   font-weight: 800;
   line-height: 138%;
   color: var(--title-color);
-  animation: title-opacity 2.5s linear 1 forwards;
+  opacity: 0;
+  transition: all 2s ease 0s;
 }
 
-@keyframes title-opacity {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.active {
+  opacity: 1;
 }
+
 .hero__text {
   margin-top: 35px;
   font-size: 20px;
@@ -200,11 +191,11 @@ a {
   }
   .hero__title {
     padding-top: 30px;
-    font-size: 32px;
+    font-size: 30px;
   }
   .hero__text {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .hero__buttons {
     margin-top: 20px;
@@ -213,7 +204,6 @@ a {
 @media screen and (max-width: 550px) {
   .hero__title {
     padding-top: 20px;
-    font-size: 20px;
   }
   .hero__text {
     margin-top: 15px;
@@ -288,7 +278,7 @@ a {
 
 @media screen and (max-width: 992px) {
   .consulting__list {
-    margin-top: -450px;
+    margin-top: -500px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -303,14 +293,23 @@ a {
 }
 @media screen and (max-width: 550px) {
   .consulting__list {
-    margin-top: -550px;
+    margin-top: -530px;
   }
 }
 @media screen and (max-width: 400px) {
   .consulting__list {
-    margin-top: -500px;
+    margin-top: -440px;
   }
 }
+.experience {
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+
+.active {
+  opacity: 1;
+}
+
 .experience__container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -323,23 +322,8 @@ a {
 
 .experience__title-top {
   margin-bottom: 10px;
-  animation: title-opacity 2.5s linear 1 forwards;
 }
 
-@keyframes title-opacity {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .experience__text-top {
   margin: 0 auto;
   max-width: 470px;
@@ -392,6 +376,15 @@ a {
     font-size: 25px;
   }
 }
+.advice {
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+
+.active {
+  opacity: 1;
+}
+
 .advice__container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -404,23 +397,14 @@ a {
 
 .advice__title-top {
   margin-bottom: 10px;
-  animation: title-opacity 2.5s linear 1 forwards;
+  opacity: 0;
+  transition: all 2s ease 0s;
 }
 
-@keyframes title-opacity {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.active {
+  opacity: 1;
 }
+
 .advice__text-top {
   margin: 0 auto;
   max-width: 470px;
@@ -492,23 +476,14 @@ a {
 
 .who__title-top {
   margin-bottom: 15px;
-  animation: title-opacity 2.5s linear 1 forwards;
+  opacity: 0;
+  transition: all 2s ease 0s;
 }
 
-@keyframes title-opacity {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.active {
+  opacity: 1;
 }
+
 .who__text-top {
   margin: 0 auto;
   max-width: 511px;
@@ -614,6 +589,15 @@ a {
     display: none;
   }
 }
+.icons {
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+
+.active {
+  opacity: 1;
+}
+
 .icons__container {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -777,23 +761,14 @@ a {
 
 .getintouch__title {
   margin-bottom: 10px;
-  animation: title-opacity 2.5s linear 1 forwards;
+  opacity: 0;
+  transition: all 2s ease 0s;
 }
 
-@keyframes title-opacity {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.active {
+  opacity: 1;
 }
+
 .getintouch__text {
   margin: 0px 0px 80px 0px;
   margin: 0 auto;
