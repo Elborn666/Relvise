@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Relvise</title>
@@ -189,7 +189,7 @@
                     <div class="who__colum">
                         <div class="who__video">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/H3JxMjzbI7U"
-                                title="YouTube video player" frameborder="0"
+                                title="YouTube video player"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                         </div>
@@ -228,7 +228,7 @@
                 </div>
             </div>
         </section>
-        <section class="icons _anim-items _anim-no-hide">
+        <div class="icons _anim-items _anim-no-hide">
             <div class="icons__container container">
                 <ul class="icons__body">
                     <li class="icons__item">
@@ -263,8 +263,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="subscribe">
+        </div>
+        <div class="subscribe">
             <div class="subscribe__container container">
                 <div class="subscribe__body">
                     <p class="subscribe__text">Subscribe For Latest Newsletter</p>
@@ -275,7 +275,7 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="getintouch">
             <div class="getintouch__container container">
                 <div class="getintouch__body">
@@ -446,15 +446,15 @@
                         We will contact you</h2>
                     <form class="modal__contactus-form">
                         <label class="modal__label-name" for="name"> Your name
-                            <input type="text" name="name" class="modal__contactus-input" required minlength="3"
-                                pattern="^[а-яА-ЯёЁa-zA-Z]+$" title="Enter only first name">
+                            <input type="text" id="name" name="name" class="modal__contactus-input" required
+                                minlength="3" pattern="^[а-яА-ЯёЁa-zA-Z]+$" title="Enter only first name">
                         </label>
                         <label class="modal__label-name" for="email"> Your Email
-                            <input type="email" name="email" class="modal__contactus-input" required
+                            <input type="email" id="email" name="email" class="modal__contactus-input" required
                                 pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$">
                         </label>
                         <label class="modal__label-name" for="tel"> Your phone
-                            <input type="tel" name="tel" class="modal__contactus-input" required minlength="10"
+                            <input type="tel" id="tel" name="tel" class="modal__contactus-input" required minlength="10"
                                 pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="Example (ХХХ)XXX-XX-XX">
                         </label>
                         <button type="submit" class="modal__contactus-button">Submit</button>
@@ -463,11 +463,10 @@
             </div>
         </div>
     </div>
+    <script src="./js/animation.js" type="module"></script>
+    <script src="./js/contactus.js" type="module"></script>
+    <script src="./js/subscribe.js" type="module"></script>
+    <script src="./js/submitrequest.js" type="module"></script>
 </body>
-
-<script src="./js/animation.js" type="module"></script>
-<script src="./js/contactus.js" type="module"></script>
-<script src="./js/subscribe.js" type="module"></script>
-<script src="./js/submitrequest.js" type="module"></script>
 
 </html>
