@@ -108,8 +108,13 @@ a {
   .header_logo {
     margin-right: 40px;
   }
+}
+@media screen and (max-width: 450px) {
+  .header__body {
+    display: block;
+  }
   .header__list {
-    flex-wrap: wrap;
+    margin-top: 10px;
   }
 }
 .hero {
@@ -371,6 +376,9 @@ a {
 @media screen and (max-width: 768px) {
   .experience__title-top {
     font-size: 30px;
+  }
+  .experience__item {
+    padding: 20px 20px;
   }
   .experience__title {
     font-size: 25px;
