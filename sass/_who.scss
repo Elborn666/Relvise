@@ -17,6 +17,9 @@
 .who__text-top {
     margin: 0 auto;
     max-width: 511px;
+
+    opacity: 0;
+    transition: all 2s  ease 0s;
 }
 .who__colum {
     display: flex;
